@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TriviaGame {
-    private List<Question> questions; // List to hold questions
-    private Player player; // Player object to store player info and score
+    private List<Question> questions; 
+    private Player player; 
     private int currentQuestionIndex;
 
-    // Constructor to initialize the game with player's name
+    
     public TriviaGame(String playerName) {
         questions = new ArrayList<>();
-        player = new Player(playerName); // Initialize player with their name
+        player = new Player(playerName); 
         currentQuestionIndex = 0;
-        loadQuestions(); // Load the questions
+        loadQuestions(); 
     }
 
-    // Load questions into the game
+   
     private void loadQuestions() {
         questions.add(new Question(
             "Which type of malware disguises itself as legitimate software?",
@@ -79,30 +79,29 @@ public class TriviaGame {
         ));
     }
 
-    // Get the next question
+   
     public Question getNextQuestion() {
         if (currentQuestionIndex < questions.size()) {
             return questions.get(currentQuestionIndex++);
         }
-        return null; // No more questions
+        return null; 
     }
 
-    // Check if the answer is correct and update score through Player
+    
     public boolean checkAnswer(int answerIndex) {
         Question currentQuestion = questions.get(currentQuestionIndex - 1);
         if (currentQuestion.isCorrectAnswer(answerIndex)) {
-            player.increaseScore(); // Increment score using the Player object
+            player.increaseScore(); 
             return true;
         }
         return false;
     }
 
-    // Get the player's score from the Player class
+
     public int getScore() {
         return player.getScore();
     }
 
-    // Get the player's name from the Player class
     public String getPlayerName() {
         return player.getName();
     }
