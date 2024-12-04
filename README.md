@@ -56,7 +56,6 @@ The below backend features have been implemented:
 • Enter your name when prompted.
 
 • Answer each question by typing the number corresponding to your choice.
-youtube
 
 • View your score at the end of the game.
 
