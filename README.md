@@ -1,4 +1,4 @@
-Section 1: Project Description
+##Section 1: Project Description
 Cybersecurity Trivia Game
 The project aims to develop a multiplayer trivia game focusing on cybersecurity topics, build as a console application. The backend is implemented in Java, while the client-side utilizes JavaScript, HTML, and CSS for visuals. WebSockets enable real-time communication between the client and server, allowing the server to manage questions, player sessions, and scoring.
 Section 2: Overview
