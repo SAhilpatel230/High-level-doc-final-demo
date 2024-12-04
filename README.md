@@ -1,22 +1,23 @@
-#Section 1: Project Description#
+# Section 1: Project Description
 
 Cybersecurity Trivia Game
 The project aims to develop a multiplayer trivia game focusing on cybersecurity topics, build as a console application. 
 
 The backend is implemented in Java, while the client-side utilizes JavaScript, HTML, and CSS for visuals. WebSockets enable real-time communication between the client and server, allowing the server to manage questions, player sessions, and scoring.
 
-Section 2: Overview
+# Section 2: Overview
 
 The trivia game operates in a browser environment, displaying questions, collecting player answers, and updating scores in real-time. 
 
 WebSocket communication ensures a seamless gaming experience with live updates and direct server interaction.
 
-Section 3: System Architecture
+# Section 3: System Architecture
 
 • Backend (Java WebSocket Server): Manages data synchronization, player sessions, and live score updates. 
+
 • Frontend (HTML/CSS/JavaScript): Browser-based interface displaying trivia questions and receiving player inputs for scoring.
 
-Section 4: Data Dictionary
+# Section 4: Data Dictionary
 
 • Player Object: Stores each player's unique ID, score, and connection state to the server.
 
@@ -24,7 +25,7 @@ Section 4: Data Dictionary
 
 • Game State Object: Monitors game progress, including current question number, individual scores, and game status (active or finished).
 
-Section 5: Data Design
+# Section 5: Data Design
 
 The backend server processes and updates player responses and scores based on real-time events, handling game state transitions and syncing question/answer data across both players for a consistent experience.
 
@@ -36,7 +37,8 @@ Section 6: User Interface Design
 
 • End Screen: Shows final scores and announces the winner.
 
-Features Implemented so far:
+# Features Implemented so far:
+
 The below backend features have been implemented:
 1.	Player Management: Players enter their names at the start, which are used to personalize the game experience.
 2.	Question Bank: Includes 10 cybersecurity questions covering topics like malware, encryption, protocols, and security tools.
@@ -47,10 +49,14 @@ The below backend features have been implemented:
 7.	Frontend.
 
    
-How to Play
+# How to Play
 
 • Run the program in an eclipse java environment.
+
 • Enter your name when prompted.
+
 • Answer each question by typing the number corresponding to your choice.
+youtube
+
 • View your score at the end of the game.
 
